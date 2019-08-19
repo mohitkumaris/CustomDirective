@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'customdirective';
+  shadowX = '12px';
+  shadowY = '6px';
+  appShadow = 'hotPink';
+
+  changetheX($event) {
+    this.shadowX = $event.target.value + 'px';
+  }
 }
